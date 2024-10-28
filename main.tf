@@ -24,7 +24,6 @@ resource "azurerm_subnet" "new-mysubnet-sonarcloud" {
   address_prefixes     = ["10.10.0.0/27"]
 }
 
-
 ##creating allow all inbound firewall rule to verify sonarcloud SAST detection
 resource "azurerm_network_security_group" "new-sonarcloud" {
   name                = "example-nsg"
